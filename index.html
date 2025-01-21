@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Focus Timer</h1>
+            <div class="theme-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="timer-container">
+            <div class="timer">
+                <span id="minutes">25</span>
+                <span class="separator">:</span>
+                <span id="seconds">00</span>
+            </div>
+            <div class="progress-ring">
+                <svg class="progress" width="320" height="320">
+                    <circle class="progress-ring-circle" cx="160" cy="160" r="145" />
+                </svg>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-pause" class="primary-btn start-btn">
+                <i class="fas fa-play"></i>
+                <span>Start Focus</span>
+            </button>
+            <button id="reset" class="secondary-btn">
+                <i class="fas fa-redo"></i>
+            </button>
+        </div>
+        <div class="bottom-text">
+            <span>Mine's better than Steve's</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
